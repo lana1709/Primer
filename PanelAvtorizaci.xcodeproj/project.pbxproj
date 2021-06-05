@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,20 @@
 		CE49F915266A4C4000DA57D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49F914266A4C4000DA57D9 /* ContentView.swift */; };
 		CE49F917266A4C4000DA57D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE49F916266A4C4000DA57D9 /* Assets.xcassets */; };
 		CE49F91A266A4C4000DA57D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE49F919266A4C4000DA57D9 /* Preview Assets.xcassets */; };
+		CED052A3266B65AD003A3BDD /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CED052A2266B65AD003A3BDD /* SwiftyJSON */; };
+		E3583220427AF4DC8FE05137 /* Pods_PanelAvtorizaci.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA970FA5D86EE215FD7078A /* Pods_PanelAvtorizaci.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BA970FA5D86EE215FD7078A /* Pods_PanelAvtorizaci.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PanelAvtorizaci.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C705DEA3AAD759DF31E27662 /* Pods-PanelAvtorizaci.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanelAvtorizaci.debug.xcconfig"; path = "Target Support Files/Pods-PanelAvtorizaci/Pods-PanelAvtorizaci.debug.xcconfig"; sourceTree = "<group>"; };
 		CE49F90F266A4C4000DA57D9 /* PanelAvtorizaci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanelAvtorizaci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE49F912266A4C4000DA57D9 /* PanelAvtorizaciApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelAvtorizaciApp.swift; sourceTree = "<group>"; };
 		CE49F914266A4C4000DA57D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE49F916266A4C4000DA57D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE49F919266A4C4000DA57D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE49F91B266A4C4000DA57D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F1D2188675B6F9EF2A8A58 /* Pods-PanelAvtorizaci.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanelAvtorizaci.release.xcconfig"; path = "Target Support Files/Pods-PanelAvtorizaci/Pods-PanelAvtorizaci.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +32,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED052A3266B65AD003A3BDD /* SwiftyJSON in Frameworks */,
+				E3583220427AF4DC8FE05137 /* Pods_PanelAvtorizaci.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		138C4DD01124336E859FBE89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BA970FA5D86EE215FD7078A /* Pods_PanelAvtorizaci.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		798936A685AC1D4EFC12E40D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C705DEA3AAD759DF31E27662 /* Pods-PanelAvtorizaci.debug.xcconfig */,
+				F4F1D2188675B6F9EF2A8A58 /* Pods-PanelAvtorizaci.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE49F906266A4C4000DA57D9 = {
 			isa = PBXGroup;
 			children = (
 				CE49F911266A4C4000DA57D9 /* PanelAvtorizaci */,
 				CE49F910266A4C4000DA57D9 /* Products */,
+				798936A685AC1D4EFC12E40D /* Pods */,
+				138C4DD01124336E859FBE89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,15 +102,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE49F91E266A4C4000DA57D9 /* Build configuration list for PBXNativeTarget "PanelAvtorizaci" */;
 			buildPhases = (
+				0EE93CBA262D2E4CC39CEF2C /* [CP] Check Pods Manifest.lock */,
 				CE49F90B266A4C4000DA57D9 /* Sources */,
 				CE49F90C266A4C4000DA57D9 /* Frameworks */,
 				CE49F90D266A4C4000DA57D9 /* Resources */,
+				2EE5D55CA9C9ACDCADB250A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PanelAvtorizaci;
+			packageProductDependencies = (
+				CED052A2266B65AD003A3BDD /* SwiftyJSON */,
+			);
 			productName = PanelAvtorizaci;
 			productReference = CE49F90F266A4C4000DA57D9 /* PanelAvtorizaci.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +143,9 @@
 				Base,
 			);
 			mainGroup = CE49F906266A4C4000DA57D9;
+			packageReferences = (
+				CED052A1266B65AD003A3BDD /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = CE49F910266A4C4000DA57D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EE93CBA262D2E4CC39CEF2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PanelAvtorizaci-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EE5D55CA9C9ACDCADB250A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PanelAvtorizaci/Pods-PanelAvtorizaci-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PanelAvtorizaci/Pods-PanelAvtorizaci-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PanelAvtorizaci/Pods-PanelAvtorizaci-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE49F90B266A4C4000DA57D9 /* Sources */ = {
@@ -264,6 +340,7 @@
 		};
 		CE49F91F266A4C4000DA57D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C705DEA3AAD759DF31E27662 /* Pods-PanelAvtorizaci.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +362,7 @@
 		};
 		CE49F920266A4C4000DA57D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F1D2188675B6F9EF2A8A58 /* Pods-PanelAvtorizaci.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CED052A1266B65AD003A3BDD /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CED052A2266B65AD003A3BDD /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED052A1266B65AD003A3BDD /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE49F907266A4C4000DA57D9 /* Project object */;
 }

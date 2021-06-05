@@ -54,7 +54,7 @@ struct ContentView: View {
             Button(action: {
                 
             }, label: {
-                Text("SIGN UP")
+                Text("SIGN IN")
                     
                     .foregroundColor(.white)
                     .bold()
