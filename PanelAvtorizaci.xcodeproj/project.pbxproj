@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0833D4266B9C62008C07B1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0833D3266B9C62008C07B1 /* Launch Screen.storyboard */; };
+		CE0833D7266BA0AD008C07B1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0833D6266BA0AD008C07B1 /* RootView.swift */; };
+		CE0833DB266BA412008C07B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0833DA266BA412008C07B1 /* MainView.swift */; };
+		CE0833DF266BABC3008C07B1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0833DE266BABC3008C07B1 /* HomeView.swift */; };
 		CE49F913266A4C4000DA57D9 /* PanelAvtorizaciApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49F912266A4C4000DA57D9 /* PanelAvtorizaciApp.swift */; };
-		CE49F915266A4C4000DA57D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49F914266A4C4000DA57D9 /* ContentView.swift */; };
+		CE49F915266A4C4000DA57D9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49F914266A4C4000DA57D9 /* SignInView.swift */; };
 		CE49F917266A4C4000DA57D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE49F916266A4C4000DA57D9 /* Assets.xcassets */; };
 		CE49F91A266A4C4000DA57D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE49F919266A4C4000DA57D9 /* Preview Assets.xcassets */; };
 		CED052A3266B65AD003A3BDD /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CED052A2266B65AD003A3BDD /* SwiftyJSON */; };
+		CED052A6266B8E72003A3BDD /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED052A5266B8E72003A3BDD /* UserObject.swift */; };
 		E3583220427AF4DC8FE05137 /* Pods_PanelAvtorizaci.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA970FA5D86EE215FD7078A /* Pods_PanelAvtorizaci.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BA970FA5D86EE215FD7078A /* Pods_PanelAvtorizaci.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PanelAvtorizaci.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C705DEA3AAD759DF31E27662 /* Pods-PanelAvtorizaci.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanelAvtorizaci.debug.xcconfig"; path = "Target Support Files/Pods-PanelAvtorizaci/Pods-PanelAvtorizaci.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0833D3266B9C62008C07B1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CE0833D6266BA0AD008C07B1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CE0833DA266BA412008C07B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE0833DE266BABC3008C07B1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = /Users/user/Desktop/PanelAvtorizaci/HomeView.swift; sourceTree = "<absolute>"; };
 		CE49F90F266A4C4000DA57D9 /* PanelAvtorizaci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanelAvtorizaci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE49F912266A4C4000DA57D9 /* PanelAvtorizaciApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelAvtorizaciApp.swift; sourceTree = "<group>"; };
-		CE49F914266A4C4000DA57D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE49F914266A4C4000DA57D9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CE49F916266A4C4000DA57D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE49F919266A4C4000DA57D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE49F91B266A4C4000DA57D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED052A5266B8E72003A3BDD /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		F4F1D2188675B6F9EF2A8A58 /* Pods-PanelAvtorizaci.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanelAvtorizaci.release.xcconfig"; path = "Target Support Files/Pods-PanelAvtorizaci/Pods-PanelAvtorizaci.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +67,36 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE0833E2266BB26F008C07B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0833DE266BABC3008C07B1 /* HomeView.swift */,
+				CE0833DA266BA412008C07B1 /* MainView.swift */,
+				CE49F914266A4C4000DA57D9 /* SignInView.swift */,
+				CE0833D6266BA0AD008C07B1 /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0833E4266BB283008C07B1 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				CED052A5266B8E72003A3BDD /* UserObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		CE0833E6266BB2A6008C07B1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE49F912266A4C4000DA57D9 /* PanelAvtorizaciApp.swift */,
+				CE49F916266A4C4000DA57D9 /* Assets.xcassets */,
+				CE49F91B266A4C4000DA57D9 /* Info.plist */,
+				CE0833D3266B9C62008C07B1 /* Launch Screen.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		CE49F906266A4C4000DA57D9 = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +118,9 @@
 		CE49F911266A4C4000DA57D9 /* PanelAvtorizaci */ = {
 			isa = PBXGroup;
 			children = (
-				CE49F912266A4C4000DA57D9 /* PanelAvtorizaciApp.swift */,
-				CE49F914266A4C4000DA57D9 /* ContentView.swift */,
-				CE49F916266A4C4000DA57D9 /* Assets.xcassets */,
-				CE49F91B266A4C4000DA57D9 /* Info.plist */,
+				CE0833E2266BB26F008C07B1 /* View */,
+				CE0833E4266BB283008C07B1 /* Object */,
+				CE0833E6266BB2A6008C07B1 /* Common */,
 				CE49F918266A4C4000DA57D9 /* Preview Content */,
 			);
 			path = PanelAvtorizaci;
@@ -160,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0833D4266B9C62008C07B1 /* Launch Screen.storyboard in Resources */,
 				CE49F91A266A4C4000DA57D9 /* Preview Assets.xcassets in Resources */,
 				CE49F917266A4C4000DA57D9 /* Assets.xcassets in Resources */,
 			);
@@ -214,8 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE49F915266A4C4000DA57D9 /* ContentView.swift in Sources */,
+				CE0833D7266BA0AD008C07B1 /* RootView.swift in Sources */,
+				CE49F915266A4C4000DA57D9 /* SignInView.swift in Sources */,
 				CE49F913266A4C4000DA57D9 /* PanelAvtorizaciApp.swift in Sources */,
+				CE0833DF266BABC3008C07B1 /* HomeView.swift in Sources */,
+				CE0833DB266BA412008C07B1 /* MainView.swift in Sources */,
+				CED052A6266B8E72003A3BDD /* UserObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+//import Alamofire
+//import SwiftyJSON
 
-struct ContentView: View {
-    @State var name = ""
+struct SignInView: View {
+    @State var email = ""
+    @State var password = ""
+    @ObservedObject var userObject = UserObject()
+    @Binding var page : Int //для перехода на второй экран
     var body: some View {
         VStack{
             
@@ -27,7 +32,7 @@ struct ContentView: View {
                 Image(systemName:"envelope")
                     .padding(.leading)
                 
-                TextField("name@email.com", text: $name)
+                TextField("name@email.com", text: $email)
                     
                     .frame(width: 320, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
@@ -40,10 +45,12 @@ struct ContentView: View {
                 .foregroundColor(.gray)
                 .bold()
                 .frame(width: UIScreen.main.bounds.width-20, alignment:.leading)
+                .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                .disableAutocorrection(true)
             HStack{
                 Image(systemName:"lock")
                     .padding(.leading)
-                TextField("********", text: $name)
+                SecureField("********", text: $password)
                     
                     .frame(width: 320, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
@@ -51,8 +58,10 @@ struct ContentView: View {
             .cornerRadius(13)
             .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color(UIColor.blue).opacity(1),lineWidth: 1))
             .padding(.bottom,15)
+           
             Button(action: {
-                
+                userObject.login(email: email, password: password)
+                page = 2
             }, label: {
                 Text("SIGN IN")
                     
@@ -86,6 +95,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SignInView(page:  .constant(1))
     }
 }
